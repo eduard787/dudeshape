@@ -1,0 +1,206 @@
+:root {
+  --medium-color: #222222;
+  --accent-bg-color: #402f2c;
+  --text-gray-color: #555555;
+  --hero-bg-color: #f9f6f5;
+  --white-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* HEADER */
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--medium-color);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.logo::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: var(--medium-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  padding: 40px 0;
+  display: block;
+  color: var(--medium-color);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.external-links {
+  display: flex;
+  gap: 24px;
+}
+
+.external-links a {
+  display: block;
+}
+
+.external-links li svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 138px;
+  background-color: var(--hero-bg-color);
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.hero .container {
+  padding-top: 40px;
+}
+
+.hero h1 {
+  width: 621px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  width: 516px;
+  color: var(--text-gray-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero form {
+  width: 326px;
+  height: 48px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 16px;
+  margin-bottom: 60px;
+}
+
+.hero form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--medium-color);
+}
+
+.hero form input::placeholder {
+  color: #999999;
+}
+
+.hero form button {
+  width: 32px;
+  height: 32px;
+  background-color: var(--accent-bg-color);
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero form button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: var(--accent-bg-color);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  padding: 16px 32px;
+  margin-bottom: 29px;
+}
+
+.hero ul {
+  width: 138px;
+  height: 80px;
+  background-color: var(--hero-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.hero ul button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero ul button svg {
+  width: 24px;
+  height: 24px;
+}
