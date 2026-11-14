@@ -38,6 +38,7 @@ body {
 header {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .container {
@@ -98,16 +99,13 @@ nav a {
 /* HERO */
 
 .hero {
-  padding-top: 138px;
+  position: relative;
+  padding-top: 178px;
+  padding-bottom: 109px;
   background-color: var(--hero-bg-color);
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
-  background-position: right center;
-}
-
-.hero .container {
-  padding-top: 40px;
-  padding-bottom: 80px;
+  background-position: calc(50% + 323px) bottom;
 }
 
 .hero h1 {
@@ -182,19 +180,23 @@ nav a {
 }
 
 .hero ul {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--hero-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 40px;
+  padding: 49px 24px;
 }
 
 .hero ul button {
   width: 40px;
   height: 40px;
-  background-color: var(--white-color);
+  background-color: transparent;
   border: none;
-  border-radius: 50%;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -203,6 +205,6 @@ nav a {
 }
 
 .hero ul button svg {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
